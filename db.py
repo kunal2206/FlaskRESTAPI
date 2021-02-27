@@ -1,5 +1,8 @@
 from pymongo import MongoClient
-from info import Mongo_URI
+import os
+
+
+Mongo_URI = os.environ.get("URI")
 
 
 cluster = MongoClient(Mongo_URI)
