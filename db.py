@@ -2,11 +2,11 @@ from pymongo import MongoClient
 import os
 
 settings = {
-    'host': os.environ('host'),
-    'username': os.environ('username'),
-    'password': os.environ('password'),
-    'database': os.environ('database'),
-    'options': os.environ('options')
+    'host': os.environ.get('host'),
+    'username': os.environ.get('username'),
+    'password': os.environ.get('password'),
+    'database': os.environ.get('database'),
+    'options': os.environ.get('options')
 }
 Mongo_URI = os.environ.get("mongodb://{username}:{password}@{host}/{database}?{options}".format(**settings))
 
