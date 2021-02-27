@@ -1,4 +1,4 @@
 Flask
 Flask-RESTful
-pymongo
+pymongo==2.8
 uwsgi
